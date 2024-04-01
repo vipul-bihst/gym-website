@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vipul fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Anton', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            width: 100%;
+        }
+
+        .left {
+            position: absolute;
+            display: inline-block;
+            top: 28px;
+            left: 20px;
+        }
+
+        .left div {
+            text-align: center;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            line-height: 20px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 43px;
+        }
+
+        .mid {
+            display: inline-block;
+            width: 36%;
+            margin: 29px auto;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            margin: -10px 131px;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: flex;
+            padding-top: 23px;
+            margin: 23px;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            display: flex;
+            width: 116px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover {
+            background-color: blue;
+            border: 2px solid white;
+            text-decoration: underline;
+            border-radius: 5px;
+        }
+
+        .left img {
+            width: 136px;
+        }
+
+        .btn {
+            font-family: 'Anton', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            border: 5px solid grey;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            margin: 0px 5px;
+            padding: 4px 14px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background-color: darkorange;
+        }
+
+        .container {
+            border: 2px solid white;
+            color:blue;
+            margin: 106px 6px;
+            padding: 9px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            color:black;
+            display: block;
+            width: 336px;
+            padding: 1px;
+            border: 3px solid blue;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+        .main{
+            display:flex;
+            justify-content:center;
+            font-size:50px;
+            color:white;
+            margin:20px 480px;
+            background-color:grey;
+            border:4px solid white;
+            animation-name:vipul;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        .main:hover,.left:hover{
+            transition:all 7s ease-in-out;
+            transform:scale(1);
+            transform:rotate(360deg);
+        }
+        @keyframes vipul{
+            0%{
+                background-color:black;
+            }
+            25%{
+                background-color:blue;
+            }
+            75%{
+                background-color:black;
+            }
+            100%{
+                background-color:blue;
+            }
+        }
+        div>h1{
+            color:white;
+            background-color:grey;
+            border:5px solid white;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<header class="header">
+    <div class="left">
+        <img src="gymphoto2.png" alt="">
+        <div>
+            vipul fitness
+        </div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li class="box"><a href="#">home</a></li>
+            <li class="box"><a href="#">about us</a></li>
+            <li class="box"><a href="#">services</a></li>
+            <li class="box"><a href="#">contact us</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="main">
+        revolution fitness point
+    </div>
+    <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">email us</button>
+    </div>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</header>
+
+<body>
+
+</body>
+
+</html>
